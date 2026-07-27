@@ -1,6 +1,6 @@
 const articles = [
   {
-    title: "“生存的诗学”，拒绝对贫困的浪漫化，关于 Lina Bo Bardi 展览",
+    title: "“生存的诗学”，拒绝对贫穷的浪漫化，关于 Lina Bo Bardi 展览",
     date: "2026.07.26",
     category: "评论",
     url: "/articles/poetics-of-survival-lina-bo-bardi/",
