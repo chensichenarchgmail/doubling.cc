@@ -60,7 +60,7 @@ a { color: inherit; text-decoration: none; }
 .topline-meta { max-width: 360px; font-size: 14px; line-height: 1.7; color: var(--muted); text-align: right; }
 
 .filters {
-  display: grid; grid-template-columns: minmax(260px, 1.5fr) repeat(3, minmax(150px, .55fr));
+  display: grid; grid-template-columns: minmax(260px, 1.5fr) repeat(4, minmax(140px, .55fr));
   gap: 10px; padding: 18px 0;
 }
 .search, .select {
