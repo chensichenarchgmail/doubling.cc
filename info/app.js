@@ -255,7 +255,6 @@ function renderProject(program) {
       <nav class="breadcrumbs"><a href="./" data-link="home">学校与项目</a><span>/</span><a href="${href("school", program.school.id)}" data-link="school" data-id="${program.school.id}">${esc(program.school.cn)}</a><span>/</span><span>${esc(program.name)}</span></nav>
       <section class="project-hero">
         <div><span class="eyebrow">${esc(program.school.country)} · ${esc(program.school.city)}</span><h1>${esc(program.name)}</h1><p class="degree">${esc(program.school.name)} · ${esc(program.degree)}</p></div>
-        <p class="project-summary">${esc(program.intro)}</p>
       </section>
       <section class="project-factbar">
         <div class="fact"><small>学制</small><span>${esc(program.duration)}</span></div>
