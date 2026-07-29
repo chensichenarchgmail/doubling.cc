@@ -1,4 +1,11 @@
-const schools = window.SCHOOLS;
+const compareByEnglishName = (a, b) =>
+  a.name.localeCompare(b.name, "en", { sensitivity: "base" });
+const schools = window.SCHOOLS
+  .map((school) => ({
+    ...school,
+    programs: [...school.programs].sort(compareByEnglishName)
+  }))
+  .sort(compareByEnglishName);
 const programs = schools.flatMap((school) =>
   school.programs.map((program) => ({ ...program, school }))
 );
