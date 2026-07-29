@@ -9,7 +9,7 @@ const state = {
   country: "全部",
   direction: "全部",
   language: "全部",
-  compare: JSON.parse(localStorage.getItem("doubling-compare") || "[]").slice(0, 3)
+  compare: JSON.parse(localStorage.getItem("doubling-compare") || "[]").slice(0, 5)
 };
 
 const esc = (value = "") => String(value).replace(/[&<>"']/g, (char) => ({
@@ -83,7 +83,7 @@ function updateCompareUI() {
   document.querySelectorAll("[data-compare-count]").forEach((item) => item.textContent = state.compare.length);
   const dock = document.querySelector("[data-compare-dock]");
   dock.hidden = state.compare.length === 0 || new URLSearchParams(location.search).get("view") === "compare";
-  document.querySelector("[data-dock-label]").textContent = `已选择 ${state.compare.length} / 3`;
+  document.querySelector("[data-dock-label]").textContent = `已选择 ${state.compare.length} / 5`;
   document.querySelector("[data-compare-mini]").innerHTML = state.compare.map((id) => {
     const p = programById(id);
     return p ? `<span class="compare-mini">${esc(p.school.cn)} · ${esc(p.name)} <button type="button" data-remove="${id}" aria-label="移除">×</button></span>` : "";
@@ -99,7 +99,7 @@ function updateCompareUI() {
 
 function toggleCompare(id) {
   if (state.compare.includes(id)) state.compare = state.compare.filter((item) => item !== id);
-  else if (state.compare.length < 3) state.compare.push(id);
+  else if (state.compare.length < 5) state.compare.push(id);
   else {
     const dock = document.querySelector("[data-compare-dock]");
     dock.animate([{ transform: "translateY(0)" }, { transform: "translateY(-8px)" }, { transform: "translateY(0)" }], { duration: 260 });
@@ -167,7 +167,7 @@ function renderHome() {
           <button type="button" data-view="programs" class="${state.view === "programs" ? "active" : ""}">项目</button>
         </div>
       </section>
-      <div class="result-line"><span data-result></span><span>可选择最多 3 个项目比较</span></div>
+      <div class="result-line"><span data-result></span><span>可选择最多 5 个项目比较</span></div>
       <section data-results></section>
     </div>`;
 
@@ -283,7 +283,7 @@ function renderProject(program) {
 }
 
 function renderCompare() {
-  const slots = [0, 1, 2];
+  const slots = [0, 1, 2, 3, 4];
   const rows = [
     ["学制", "duration"], ["授课语言", "language"], ["非欧盟学费", "tuition"], ["申请节点", "deadline"],
     ["主要方向", "intro"], ["适合申请者", "suitable"], ["作品集重点", "portfolio"], ["资格与材料", "requirements"], ["需要注意", "warning"]
@@ -296,7 +296,7 @@ function renderCompare() {
   app.innerHTML = `
     <div class="page">
       <nav class="breadcrumbs"><a href="./" data-link="home">学校与项目</a><span>/</span><span>项目比较</span></nav>
-      <section class="compare-heading"><span class="eyebrow">最多选择三个项目</span><h1>项目比较<span style="color:var(--orange)">.</span></h1><p>从方向、资格、费用和作品集重点逐项判断，不以学校排名替代项目匹配。</p></section>
+      <section class="compare-heading"><span class="eyebrow">最多选择五个项目</span><h1>项目比较<span style="color:var(--orange)">.</span></h1><p>从方向、资格、费用和作品集重点逐项判断，不以学校排名替代项目匹配。</p></section>
       <section class="compare-selectors">
         ${slots.map((index) => `<div class="selector-slot"><label>项目 ${index + 1}</label><select data-slot="${index}">${options(selected[index])}</select></div>`).join("")}
       </section>
@@ -318,7 +318,7 @@ function renderCompare() {
         return;
       }
       if (value) next[index] = value; else next.splice(index, 1);
-      state.compare = next.filter(Boolean).slice(0, 3);
+      state.compare = next.filter(Boolean).slice(0, 5);
       updateCompareUI();
       renderCompare();
     };
