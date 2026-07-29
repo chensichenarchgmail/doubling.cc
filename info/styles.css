@@ -154,12 +154,12 @@ a { color: inherit; text-decoration: none; }
 .compare-heading { padding-bottom: 34px; border-bottom: 1px solid var(--ink); }
 .compare-heading h1 { margin: 4px 0 12px; font-size: clamp(42px, 7vw, 88px); letter-spacing: -.065em; line-height: .95; }
 .compare-heading p { margin: 0; color: var(--muted); }
-.compare-selectors { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; padding: 18px 0 44px; }
+.compare-selectors { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; padding: 18px 0 44px; }
 .selector-slot { min-height: 140px; background: white; border: 1px solid var(--line); padding: 18px; }
 .selector-slot label { display: block; color: var(--muted); font-size: 11px; margin-bottom: 12px; }
 .selector-slot select { width: 100%; border: 0; border-bottom: 1px solid var(--ink); padding: 10px 0; background: white; outline: none; }
 .compare-table { border-top: 1px solid var(--ink); }
-.compare-row { display: grid; grid-template-columns: 170px repeat(3, 1fr); border-bottom: 1px solid var(--line); }
+.compare-row { display: grid; grid-template-columns: 150px repeat(5, minmax(190px, 1fr)); border-bottom: 1px solid var(--line); }
 .compare-cell { padding: 22px 18px; border-left: 1px solid var(--line); font-size: 14px; line-height: 1.65; }
 .compare-label { padding: 22px 18px 22px 0; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
 .compare-name { min-height: 190px; }
@@ -192,7 +192,7 @@ a { color: inherit; text-decoration: none; }
   .program-grid { grid-template-columns: 1fr 1fr; }
   .detail-hero, .project-hero, .project-layout { grid-template-columns: 1fr; gap: 28px; }
   .school-program-list .school-program { grid-template-columns: 1fr 1fr; padding: 20px 0; }
-  .compare-row { grid-template-columns: 110px repeat(3, minmax(220px, 1fr)); }
+  .compare-row { grid-template-columns: 110px repeat(5, minmax(220px, 1fr)); }
   .compare-table { overflow-x: auto; }
 }
 @media (max-width: 680px) {
