@@ -594,5 +594,116 @@ window.SCHOOLS = [
       warning: "非 EU 截止通常早于 EU；语言证书与具体 major 每年核查。",
       url: "https://www.uni.li/en/studies/study-programmes/msc-architecture"
     }]
+  },
+  {
+    id: "eth-zurich",
+    name: "ETH Zürich",
+    cn: "苏黎世联邦理工学院",
+    city: "苏黎世",
+    country: "瑞士",
+    position: "以高强度设计工作室整合技术、历史理论、城市与资源议题的德语专业建筑教育。",
+    programs: [{
+      id: "eth-architecture",
+      name: "Architecture",
+      degree: "MSc ETH in Architecture",
+      duration: "2 年 · 120 ECTS + 6 个月实践",
+      language: "德语 · C1",
+      tuition: "CHF 2,190 / 学期 + 杂费",
+      deadline: "建议按 2026.11.01—11.30 准备",
+      status: "2027 待最终确认",
+      tags: ["建筑设计", "技术整合", "历史理论", "城市"],
+      intro: "以设计 studio 为核心，连接历史与理论、技术、建造、景观和城市设计，并强调资源减少背景下从总体策略到材料构造的环境判断。",
+      suitable: "建筑本科课程完整、设计与技术基本功强，已具备或能够按期取得德语 C1，并能完成实践要求的申请者。",
+      portfolio: "A4 数字 PDF、最多 15 页；3 个在校项目且至少 2 个为设计项目，突出设计表达、场地回应及材料和构造尺度的资源判断。",
+      requirements: "建筑本科或等值教育；申请截止前提交认可的德语 C1；国际学历接受课程等值审查，取得学位前须证明至少 6 个月建筑或建造行业实践。",
+      warning: "核心 Architecture MSc 不能仅凭英语规划。部分课程或考试可用英语，不代表英语证书可替代德语 C1；Landscape Architecture 是另一专业。",
+      url: "https://ethz.ch/en/studies/master/application/master-architektur.html"
+    }]
+  },
+  {
+    id: "epfl",
+    name: "EPFL",
+    cn: "洛桑联邦理工学院",
+    city: "洛桑",
+    country: "瑞士",
+    position: "在法英双语与 ENAC 跨学科环境中连接设计、结构、环境、城市和社会立场。",
+    programs: [{
+      id: "epfl-architecture",
+      name: "Architecture",
+      degree: "MSc in Architecture",
+      duration: "2 年 · 120 ECTS + 12 个月既往实践",
+      language: "法语 / 英语 · 双语",
+      tuition: "CHF 2,240 / 学期总账单",
+      deadline: "通常 12.15 / 03.31",
+      status: "2027 待最终确认",
+      tags: ["建筑设计", "跨学科", "可持续", "城市", "材料研究"],
+      intro: "在 design studio 中把建筑设计与人文、结构、技术、环境科学、城市和领土尺度并置，强调气候转型、资源与建筑师的社会角色。",
+      suitable: "学业和建筑基本功强，已有规定长度的实践，并愿意在英语之外建立法语工作能力的申请者。",
+      portfolio: "版面不大于 A4，优先学术设计项目；呈现图纸精度、多样表达、建筑到城市和领土的尺度变化，以及从概念到材料性的完整链条。",
+      requirements: "优秀建筑本科；须有 12 个月实践，其中至少连续 6 个月在同一建筑单位。学校建议法语或英语一门优秀、另一门良好，并建议教学语言至少 C1。",
+      warning: "这是法英双语环境，不能保证所有 studio 与课程均可零法语完成；实践年限是申请前必须优先核查的硬条件。",
+      url: "https://www.epfl.ch/education/master/programs/architecture/"
+    }]
+  },
+  {
+    id: "polimi",
+    name: "Politecnico di Milano",
+    cn: "米兰理工大学",
+    city: "米兰 / 曼托瓦 / 皮亚琴察",
+    country: "意大利",
+    position: "以三条独立建筑硕士路径覆盖综合建筑设计、历史与遗产、建筑—景观及生态转型。",
+    programs: [
+      {
+        id: "polimi-architecture",
+        name: "Architecture",
+        degree: "MSc · Milano Leonardo",
+        duration: "2 年",
+        language: "英语路径 · 意大利语路径",
+        tuition: "最高 €3,943.04 / 年（2026/27）",
+        deadline: "2027 待公布 · 建议 2026.10 起准备",
+        status: "2027 待更新",
+        tags: ["建筑设计", "技术整合", "专业实践", "再利用"],
+        intro: "以 polytechnic culture 综合建筑的人文与艺术、科学技术和专业实践，处理当代生活空间、既有建筑、空间再发展及脆弱自然与人造环境。",
+        suitable: "建筑本科和课程匹配度高，希望继续全面专业建筑训练，并能同时呈现空间、技术和既有环境判断的申请者。",
+        portfolio: "展示完整建筑设计链条：概念、总图、平立剖、空间、结构、材料与技术整合；不要只用旧项目名定位申请方向。",
+        requirements: "建筑本科、课程匹配与作品集；中国学历当前最低 GPA 80%。所有 MSc 申请者须提交认可的英语证明，当前 IELTS 6.0 等；一次最多申请两个 MSc。",
+        warning: "须在英语与意大利语教学路径中明确选择；英文项目国际生仍有毕业前完成 Italian OFA 的义务。建筑与设计仅 9 月入学。",
+        url: "https://www.polimi.it/en/education/laurea-magistrale-programmes/programme-detail/architecture"
+      },
+      {
+        id: "polimi-adh",
+        name: "Architectural Design and History",
+        degree: "MSc · Mantova",
+        duration: "2 年",
+        language: "英语",
+        tuition: "最高 €3,943.04 / 年（2026/27）",
+        deadline: "2027 待公布 · 建议 2026.10 起准备",
+        status: "2027 待更新",
+        tags: ["建筑设计", "建筑历史", "历史城市", "遗产", "修复"],
+        intro: "把建筑设计与历史、测绘和修复、历史城市、建筑—景观关系、遗产管理及环境可持续性并置，并连接遗产城市保护与规划研究。",
+        suitable: "对历史城市、遗产、更新与当代介入有持续项目积累，能够把历史判断转译为空间和材料策略的建筑本科生。",
+        portfolio: "强化测绘和场地证据、历史条件、保护与更新策略、建筑空间和材料构造之间的连续性。",
+        requirements: "建筑本科等值性、既往学业与作品集比较评审；中国学历当前最低 GPA 80%，所有 MSc 申请者须满足英语要求。",
+        warning: "全英文不等于只看概念表达；历史研究必须落实到可读的建筑图纸、修复判断与当代设计结果。国际生仍有 Italian OFA。",
+        url: "https://www.polimi.it/en/education/laurea-magistrale-programmes/programme-detail/architectural-design-and-history"
+      },
+      {
+        id: "polimi-sald",
+        name: "Sustainable Architecture and Landscape Design",
+        degree: "MSc · Piacenza",
+        duration: "2 年",
+        language: "英语",
+        tuition: "最高 €3,943.04 / 年（2026/27）",
+        deadline: "2027 待公布 · 建议 2026.10 起准备",
+        status: "2027 待更新",
+        tags: ["可持续", "气候", "公共性", "城市", "设计研究"],
+        intro: "以设计研究连接建筑与景观，回应气候变化、资源耗竭、环境正义、公共空间、基础设施、再生与生态过程。",
+        suitable: "具有建筑—景观、多尺度生态、气候适应或公共空间项目，并能用证据支撑设计判断的建筑本科生。",
+        portfolio: "用场地、生态和气候证据建立从领土、景观到建筑与材料的尺度链条，避免把可持续简化为性能标签。",
+        requirements: "建筑本科、课程匹配与作品集；中国学历当前最低 GPA 80%，所有 MSc 申请者须满足英语要求。",
+        warning: "这是建筑与景观设计研究路径，不等于普通 Landscape Architecture，也不应只做环境性能展示。国际生仍有 Italian OFA。",
+        url: "https://www.polimi.it/en/education/laurea-magistrale-programmes/programme-detail/sustainable-architecture-and-landscape-design"
+      }
+    ]
   }
 ];
