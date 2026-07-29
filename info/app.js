@@ -19,6 +19,47 @@ const href = (view, id = "") => `?view=${view}${id ? `&id=${encodeURIComponent(i
 const programById = (id) => programs.find((item) => item.id === id);
 const schoolById = (id) => schools.find((item) => item.id === id);
 
+const directionGroups = [
+  {
+    label: "建筑设计与实践",
+    keywords: ["建筑设计", "建筑实践", "专业实践", "综合训练", "小班", "小班工作室", "设计建造"]
+  },
+  {
+    label: "城市、社会与公共空间",
+    keywords: ["城市", "城市研究", "城市设计", "规划", "公共性", "公共政策", "社会参与", "社会生态", "社会空间", "社会转型", "政治建筑"]
+  },
+  {
+    label: "可持续与环境",
+    keywords: ["可持续", "批判性可持续", "气候", "气候适应", "环境性能", "寒地建筑", "极端环境", "地域"]
+  },
+  {
+    label: "遗产、历史与更新",
+    keywords: ["遗产", "遗产改造", "修复", "再利用", "更新", "建筑历史", "历史城市", "历史理论"]
+  },
+  {
+    label: "技术、建造与材料",
+    keywords: ["技术整合", "建造", "木构", "材料实验", "材料研究", "数字制造", "计算设计", "设计制作"]
+  },
+  {
+    label: "实验、研究与跨学科",
+    keywords: ["实验建筑", "原型", "批判实践", "设计批评", "设计研究", "自主研究", "建筑文化", "艺术实践", "跨学科"]
+  }
+];
+
+function programDirections(program) {
+  const matches = directionGroups
+    .filter((group) => program.tags.some((tag) => group.keywords.includes(tag)))
+    .map((group) => group.label);
+  return matches.length ? matches : ["建筑设计与实践"];
+}
+
+function programLanguage(program) {
+  const language = program.language.trim();
+  if (/^英语(?:$| ·)/.test(language)) return "英语授课";
+  if (language.includes("英语路径") || language.includes("英语 B2 路径")) return "英语路径";
+  return "其他语言 / 待核实";
+}
+
 function navigate(view, id = "", replace = false) {
   const url = new URL(location.href);
   url.search = "";
@@ -108,8 +149,8 @@ function programCard(program) {
 
 function renderHome() {
   const countries = ["全部", ...new Set(schools.map((s) => s.country))];
-  const directions = ["全部", ...new Set(programs.flatMap((p) => p.tags))].sort();
-  const languages = ["全部", "英语", "含其他语言"];
+  const directions = ["全部", ...directionGroups.map((group) => group.label)];
+  const languages = ["全部", "英语授课", "英语路径", "其他语言 / 待核实"];
   app.innerHTML = `
     <div class="page">
       <section class="topline">
@@ -118,8 +159,9 @@ function renderHome() {
       </section>
       <section class="filters" aria-label="筛选">
         <input class="search" type="search" placeholder="搜索学校、城市、项目或方向" aria-label="搜索" value="${esc(state.query)}" data-search />
-        <select class="select" aria-label="国家" data-country>${countries.map((c) => `<option ${c === state.country ? "selected" : ""}>${esc(c)}</option>`)}</select>
-        <select class="select" aria-label="方向" data-direction>${directions.map((c) => `<option ${c === state.direction ? "selected" : ""}>${esc(c)}</option>`)}</select>
+        <select class="select" aria-label="地区或国家" data-country>${countries.map((c) => `<option value="${esc(c)}" ${c === state.country ? "selected" : ""}>${c === "全部" ? "地区 / 国家：全部" : esc(c)}</option>`)}</select>
+        <select class="select" aria-label="项目方向" data-direction>${directions.map((c) => `<option value="${esc(c)}" ${c === state.direction ? "selected" : ""}>${c === "全部" ? "项目方向：全部" : esc(c)}</option>`)}</select>
+        <select class="select" aria-label="授课语言" data-language>${languages.map((c) => `<option value="${esc(c)}" ${c === state.language ? "selected" : ""}>${c === "全部" ? "授课语言：全部" : esc(c)}</option>`)}</select>
         <div class="view-toggle" aria-label="显示方式">
           <button type="button" data-view="schools" class="${state.view === "schools" ? "active" : ""}">学校</button>
           <button type="button" data-view="programs" class="${state.view === "programs" ? "active" : ""}">项目</button>
@@ -134,17 +176,19 @@ function renderHome() {
     const selectedSchools = schools.filter((school) => {
       const countryMatch = state.country === "全部" || school.country === state.country;
       const relevantPrograms = school.programs.filter((program) => {
-        const directionMatch = state.direction === "全部" || program.tags.includes(state.direction);
+        const directionMatch = state.direction === "全部" || programDirections(program).includes(state.direction);
+        const languageMatch = state.language === "全部" || programLanguage(program) === state.language;
         const haystack = [school.name, school.cn, school.city, school.country, school.position, program.name, program.degree, ...program.tags].join(" ").toLowerCase();
-        return directionMatch && (!query || haystack.includes(query));
+        return directionMatch && languageMatch && (!query || haystack.includes(query));
       });
       return countryMatch && relevantPrograms.length > 0;
     });
     const selectedPrograms = programs.filter((program) => {
       const countryMatch = state.country === "全部" || program.school.country === state.country;
-      const directionMatch = state.direction === "全部" || program.tags.includes(state.direction);
+      const directionMatch = state.direction === "全部" || programDirections(program).includes(state.direction);
+      const languageMatch = state.language === "全部" || programLanguage(program) === state.language;
       const haystack = [program.school.name, program.school.cn, program.school.city, program.name, program.degree, program.intro, ...program.tags].join(" ").toLowerCase();
-      return countryMatch && directionMatch && (!query || haystack.includes(query));
+      return countryMatch && directionMatch && languageMatch && (!query || haystack.includes(query));
     });
     const results = document.querySelector("[data-results]");
     document.querySelector("[data-result]").textContent = state.view === "schools" ? `${selectedSchools.length} 所学校` : `${selectedPrograms.length} 个项目`;
@@ -170,6 +214,7 @@ function renderHome() {
   document.querySelector("[data-search]").oninput = (event) => { state.query = event.target.value; filter(); };
   document.querySelector("[data-country]").onchange = (event) => { state.country = event.target.value; filter(); };
   document.querySelector("[data-direction]").onchange = (event) => { state.direction = event.target.value; filter(); };
+  document.querySelector("[data-language]").onchange = (event) => { state.language = event.target.value; filter(); };
   document.querySelectorAll("[data-view]").forEach((button) => {
     button.onclick = () => {
       state.view = button.dataset.view;
