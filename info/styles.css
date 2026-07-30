@@ -151,6 +151,19 @@ a { color: inherit; text-decoration: none; }
 .project-side .button { width: 100%; margin-bottom: 9px; }
 .official-link { margin-top: 18px; color: var(--muted); font-size: 12px; line-height: 1.5; }
 
+.contact-heading { padding: 10px 0 44px; border-bottom: 1px solid var(--ink); }
+.contact-heading h1 { margin: 4px 0 18px; font-size: clamp(42px, 7vw, 88px); letter-spacing: -.065em; line-height: .95; }
+.contact-heading h1 span { color: var(--orange); }
+.contact-heading p { max-width: 620px; margin: 0; color: var(--muted); font-size: 16px; line-height: 1.7; }
+.contact-card {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 40px;
+  margin-top: 18px; padding: 34px; background: var(--white); border: 1px solid var(--line);
+}
+.contact-card h2 { margin: 0 0 20px; font-size: clamp(28px, 4vw, 48px); letter-spacing: -.045em; }
+.contact-url { color: var(--muted); font-size: 13px; line-height: 1.6; overflow-wrap: anywhere; }
+.contact-url:hover { color: var(--orange); }
+.contact-button { min-width: 190px; }
+
 .compare-heading { padding-bottom: 34px; border-bottom: 1px solid var(--ink); }
 .compare-heading h1 { margin: 4px 0 12px; font-size: clamp(42px, 7vw, 88px); letter-spacing: -.065em; line-height: .95; }
 .compare-heading p { margin: 0; color: var(--muted); }
@@ -198,7 +211,7 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 680px) {
   .site-header { height: 62px; padding: 0 16px; }
   .main-nav { gap: 15px; font-size: 12px; }
-  .main-nav > a { display: none; }
+  .main-nav .nav-home { display: none; }
   .page { padding: 20px 16px 100px; }
   .topline { align-items: start; flex-direction: column; padding-top: 16px; }
   .topline-meta { text-align: left; }
@@ -211,6 +224,8 @@ a { color: inherit; text-decoration: none; }
   .project-factbar { grid-template-columns: 1fr 1fr; }
   .project-factbar .fact { border-bottom: 1px solid var(--line); }
   .school-program-list .school-program { grid-template-columns: 1fr; gap: 10px; }
+  .contact-card { grid-template-columns: 1fr; padding: 24px; }
+  .contact-button { width: 100%; }
   .compare-selectors { grid-template-columns: 1fr; }
   .compare-dock-inner { grid-template-columns: 1fr auto; padding: 10px 16px; }
   .compare-mini-list { display: none; }
