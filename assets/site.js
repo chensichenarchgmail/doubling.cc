@@ -1,5 +1,25 @@
 const articles = [
   {
+    title: "草图的将来完成时/关于 Peter Märkli",
+    date: "2026.07.30",
+    category: "理论",
+    url: "/articles/future-perfect-sketch-peter-markli/",
+    summary:
+      "从 Sprachzeichnungen 出发，讨论草图如何悬置物象、测试空间关系，并在建成之后才被确认为一种建筑语言。",
+    tags: [
+      "Peter Märkli",
+      "建筑草图",
+      "空间关系",
+      "建筑设计",
+      "瑞士建筑",
+      "建筑语言",
+      "Sprachzeichnungen",
+      "将来完成时",
+    ],
+    searchableText:
+      "Peter Märkli Peter Markli Sprachzeichnungen language drawings 空间格式塔思维图 建筑草图 项目草图 构成研究 柱 墙 节点 语法研究 Florian Beigel 线条 透视 节奏 间距 空间深度 符号学 差异系统 边框 空白 横线 竖线 黑块 红点 比例 重心 边界 具象 抽象 图像 可消费性 场地 功能 结构 材料 建造 使用 建筑语言 空间关系 将来完成时 蓝图 墙的厚度 光 结构节奏 身体 空隙 现实检验 瑞士建筑 建筑设计",
+  },
+  {
     title: "“生存的诗学”，拒绝对贫穷的浪漫化，关于 Lina Bo Bardi 展览",
     date: "2026.07.26",
     category: "评论",
