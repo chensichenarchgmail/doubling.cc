@@ -3,7 +3,7 @@ const articles = [
     title: "草图的将来完成时/关于 Peter Märkli",
     date: "2026.07.30",
     category: "理论",
-    url: "/articles/future-perfect-sketch-peter-markli/",
+    url: "/articles/future-perfect-sketch-peter-markli/?v=20260730",
     summary:
       "从 Sprachzeichnungen 出发，讨论草图如何悬置物象、测试空间关系，并在建成之后才被确认为一种建筑语言。",
     tags: [
