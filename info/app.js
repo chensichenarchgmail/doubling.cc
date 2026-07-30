@@ -83,6 +83,9 @@ function headerControls() {
   document.querySelectorAll("[data-open-compare]").forEach((item) => {
     item.onclick = () => navigate("compare");
   });
+  document.querySelectorAll("[data-contact]").forEach((item) => {
+    item.onclick = (event) => { event.preventDefault(); navigate("contact"); };
+  });
 }
 
 function updateCompareUI() {
@@ -288,6 +291,28 @@ function renderProject(program) {
   bindCompareButtons();
 }
 
+function renderContact() {
+  const xhsUrl = "https://xhslink.cn/m/5hU8gL6OSXb";
+  app.innerHTML = `
+    <div class="page">
+      <nav class="breadcrumbs"><a href="./" data-link="home">学校与项目</a><span>/</span><span>联系</span></nav>
+      <section class="contact-heading">
+        <span class="eyebrow">Contact</span>
+        <h1>联系<span>.</span></h1>
+        <p>如需咨询建筑设计硕士选校、项目方向或作品集，请通过小红书主页联系。</p>
+      </section>
+      <section class="contact-card">
+        <div>
+          <span class="eyebrow">小红书</span>
+          <h2>小红书主页</h2>
+          <a class="contact-url" href="${xhsUrl}" target="_blank" rel="noopener noreferrer">${xhsUrl}</a>
+        </div>
+        <a class="button button-orange contact-button" href="${xhsUrl}" target="_blank" rel="noopener noreferrer">打开小红书主页 ↗</a>
+      </section>
+    </div>`;
+  bindInternalLinks();
+}
+
 function renderCompare() {
   const slots = [0, 1, 2, 3, 4];
   const rows = [
@@ -348,6 +373,7 @@ function renderRoute() {
   if (view === "school" && schoolById(id)) renderSchool(schoolById(id));
   else if (view === "project" && programById(id)) renderProject(programById(id));
   else if (view === "compare") renderCompare();
+  else if (view === "contact") renderContact();
   else renderHome();
   updateCompareUI();
   headerControls();
