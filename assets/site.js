@@ -1,5 +1,25 @@
 const articles = [
   {
+    title: "楼梯和差异，关于 Pino Pizzigoni",
+    date: "2026.08.15",
+    category: "理论",
+    url: "/articles/stairs-and-difference-pino-pizzigoni/?v=20260815",
+    summary:
+      "从作为物体的楼梯，到生成剖面、公共路线与整座建筑：Pizzigoni 不是用楼梯消除高差，而是借它生产空间差异。",
+    tags: [
+      "Pino Pizzigoni",
+      "楼梯",
+      "建筑剖面",
+      "空间差异",
+      "身体经验",
+      "建筑路线",
+      "意大利建筑",
+      "建筑设计",
+    ],
+    searchableText:
+      "Pino Pizzigoni Giuseppe Pizzigoni 楼梯 差异 高差 阻断 绕行 剩余 House for his Father Locatelli House Rinaldi Ardiani House Azimonti Fortis House Finazzi Building Mayer Building Mayer Printing Works Trescore INA Social Housing Pagoda Apartments La Pagoda 物体 路线 身体 坡地 住宅中心 露台 三角形 储藏 通道 环形动线 公寓 生活 睡眠 过道 功能分区 剖面 上升轨迹 街巷 柱廊 小广场 公共性 交叉 停顿 展开 半层 旋转 退台 天光 流动空间 阻力 转身 跨越 不连续 意大利建筑 建筑设计",
+  },
+  {
     title: "草图的将来完成时/关于 Peter Märkli",
     date: "2026.07.30",
     category: "理论",
