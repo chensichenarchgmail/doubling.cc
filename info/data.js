@@ -21,6 +21,7 @@ window.SCHOOLS = [
         suitable: "建筑本科扎实，能把研究问题转译为空间、材料和建造判断的申请者。",
         portfolio: "用 3–5 个完整项目呈现问题、迭代、图纸、模型与技术判断；团队项目明确个人贡献。",
         requirements: "相关建筑本科；按 Architecture major 当年指令提交作品集及申请材料。",
+        interview: "必需（入围后）：通过第一阶段的申请者进入第二阶段线上面试。",
         warning: "不要把 Urban Studies and Planning 的学费、作品集要求或城市研究方向与本项目混用。",
         url: "https://www.aalto.fi/en/study-options/architecture-master-of-science-in-architecture"
       },
@@ -38,6 +39,7 @@ window.SCHOOLS = [
         suitable: "明确希望转向城市研究、治理、住房或公共政策，并保留空间思维的申请者。",
         portfolio: "突出田野、数据、城市尺度分析与空间策略的连续性。",
         requirements: "相关背景；具体资格与作品集格式按 2027 申请页面核查。",
+        interview: "必需（入围后）：通过第一阶段的申请者进入第二阶段线上面试。",
         warning: "如果目标是传统建筑师训练，应优先评估 Architecture major。",
         url: "https://www.aalto.fi/en/study-options/masters-programme-in-urban-studies-and-planning-msc-in-architecture"
       }
@@ -64,6 +66,7 @@ window.SCHOOLS = [
       suitable: "有再利用、住房、公共建筑、材料生命周期或气候适应项目的建筑本科生。",
       portfolio: "证明环境策略怎样改变空间、结构、材料、生命周期和使用方式，避免仅使用绿色标签。",
       requirements: "相关建筑学位、英语证明及 Studyinfo 当轮要求的补充材料。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
       warning: "旧有 12 月至 1 月的日期不能当作 2027 已公布截止。",
       url: "https://www.tuni.fi/en/tau/masters-programmes/sustainable-architecture-architecture"
     }]
@@ -89,6 +92,7 @@ window.SCHOOLS = [
       suitable: "愿意研究寒地生活、气候、木构、社区与技术实现的建筑本科生。",
       portfolio: "用剖面、围护、采光、季节环境与材料逻辑证明设计能力。",
       requirements: "相关建筑本科与英语证明；最终以 Studyinfo 当轮页面为准。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
       warning: "第二年 40% tuition waiver 不是标准学费，不能把减免后的 €9,800 作为报价。",
       url: "https://www.oulu.fi/en/apply/masters-architecture"
     }]
@@ -114,6 +118,7 @@ window.SCHOOLS = [
       suitable: "能同时处理空间组织、城市尺度和技术实现的建筑本科生。",
       portfolio: "以完整项目说明设计命题与技术、环境系统之间的关系，避免堆叠竞赛效果图。",
       requirements: "相应建筑本科及 Swedish national admissions 的通用与项目条件。",
+        interview: "官网未列为常规环节：以申请材料与作品集评审为主；2027 简章发布后复核。",
       warning: "学费以瑞典克朗公布，不用未标日期的欧元换算值作固定报价。",
       url: "https://www.kth.se/en/studies/master/architecture/msc-architecture-1.48041"
     }]
@@ -140,6 +145,7 @@ window.SCHOOLS = [
         suitable: "希望深化专业建筑与城市设计、具有完整空间表达能力的申请者。",
         portfolio: "突出不同尺度之间的连续性，以及空间、构造和城市判断的整合。",
         requirements: "180 ECTS 等值本科及项目特定先修、英语和作品集要求。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "不要以泛称 Architecture MSc 代替具体项目名。",
         url: "https://www.chalmers.se/en/education/find-masters-programme/architecture-and-urban-design-msc/"
       },
@@ -157,6 +163,7 @@ window.SCHOOLS = [
         suitable: "能形成研究问题，处理资源、利益相关者、治理与空间后果的申请者。",
         portfolio: "以真实情境、证据与设计后果建立论证，不做抽象的绿色未来。",
         requirements: "相关建筑、工程、技术或科学本科，并满足项目特定条件。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "与 A&UD 的动机和作品集重点必须区分。",
         url: "https://www.chalmers.se/en/education/find-masters-programme/architecture-and-planning-beyond-sustainability-msc/"
       }
@@ -184,6 +191,7 @@ window.SCHOOLS = [
         suitable: "希望继续全面专业建筑训练的建筑本科生。",
         portfolio: "单一数字 PDF；平立剖、构造与过程必须完整，以当轮 10MB 等格式指令为准。",
         requirements: "建筑学本科或等同背景、个人数字作品集、statement 与 English 6。",
+        interview: "官网未列为常规环节：以申请材料与作品集评审为主；2027 简章发布后复核。",
         warning: "以 SEK 收费，旧欧元换算不能直接作为报价。",
         url: "https://www.lunduniversity.lu.se/study/architecture-masters-programme-TAMAR"
       },
@@ -201,6 +209,7 @@ window.SCHOOLS = [
         suitable: "已有计算设计、材料实验、制造或批判技术叙事的建筑申请者。",
         portfolio: "说明数字工具背后的材料、构造与环境问题，参数化形式不能替代建筑结果。",
         requirements: "相关建筑背景、作品集、statement 与 English 6。",
+        interview: "官网未列为常规环节：以申请材料与作品集评审为主；2027 简章发布后复核。",
         warning: "这是明确的数字研究方向，不应混同为通用 M.Arch。",
         url: "https://www.lunduniversity.lu.se/study/digital-architecture-and-emergent-futures-masters-programme-TAAEF"
       },
@@ -218,6 +227,7 @@ window.SCHOOLS = [
         suitable: "作品集中有城市、景观、规划或社会空间连续研究的申请者。",
         portfolio: "突出尺度转换、田野证据、空间规则与城市策略。",
         requirements: "相关本科、个人数字作品集与 English 6。",
+        interview: "官网未列为常规环节：以申请材料与作品集评审为主；2027 简章发布后复核。",
         warning: "跨学科友好不等于没有空间设计门槛。",
         url: "https://www.lunduniversity.lu.se/study/sustainable-urban-design-masters-programme-TASUD"
       }
@@ -244,6 +254,7 @@ window.SCHOOLS = [
       suitable: "能以空间、社会、艺术与制作形成独立论述的建筑本科生。",
       portfolio: "保留清晰的建筑设计能力，同时呈现批判观察、手作、过程和个人方法。",
       requirements: "建筑本科或等同背景；学术材料走统一平台，portfolio 按学校方式单独提交。",
+        interview: "官网未列为常规环节：以申请材料与作品集评审为主；2027 简章发布后复核。",
       warning: "授予艺术硕士，须与瑞典五年制专业 Architecture Programme 区分。",
       url: "https://www.umu.se/en/umea-school-of-architecture/education/programmes/masters-programme-in-architecture-and-urban-design/"
     }]
@@ -269,6 +280,7 @@ window.SCHOOLS = [
       suitable: "有建筑本科、愿意把实验与现实议题共同推进且资金规划充分的申请者。",
       portfolio: "把场地阅读、策略、建筑空间与技术表达压缩为清晰主线。",
       requirements: "依年度 application guidelines 与 portfolio requirements 核查。",
+        interview: "官网未列申请人面试：所谓第二轮是学校内部进一步评审；2027 年度指南发布后复核。",
       warning: "RIBA Part 2 适用性须按入学年度重新核实；学校不提供校内 financial aid。",
       url: "https://aarch.dk/en/full-degree-student-admission/"
     }]
@@ -288,13 +300,14 @@ window.SCHOOLS = [
         duration: "2 年",
         language: "英语",
         tuition: "最新公开：2026 call · 2027 学费待公布",
-        deadline: "最新：2026 轮面试 01.26—01.28 · 2027 待发布",
+        deadline: "最新：2026.03.01 · 2027 待公布",
         status: "最新公开：2026 · 2027 待更新",
         tags: ["批判性可持续", "政治建筑", "社会生态"],
         intro: "从政治、资源与社会关系审视可持续性，同时强调实践、材料与建造方法，使批判立场落实为可实施的建筑设计。",
         suitable: "具备建筑本科、研究能力与社会—生态议题项目的申请者。",
         portfolio: "让研究问题落到现状阅读、空间决策、材料和构造，不只呈现立场。",
         requirements: "国家认可学校的 Bachelor in Architecture 或 architectural studies，及当轮完整材料。",
+        interview: "官网未列为常规环节：以申请材料与作品集评审为主；2027 简章发布后复核。",
         warning: "studio 名称、开放状态、名额与费用必须按 2027 admissions portal 复核。",
         url: "https://kglakademi.dk/en/admission-master"
       },
@@ -305,13 +318,14 @@ window.SCHOOLS = [
         duration: "2 年",
         language: "英语",
         tuition: "最新公开：2026 call · 2027 学费待公布",
-        deadline: "最新：2026 轮面试 01.26—01.28 · 2027 待发布",
+        deadline: "最新：2026.03.01 · 2027 待公布",
         status: "最新公开：2026 · 2027 待更新",
         tags: ["极端环境", "气候", "原型"],
         intro: "以极端环境为具体场地条件，结合实地与环境研究、建筑实验和原型设计，探索建筑对气候及地域限制的回应。",
         suitable: "有气候、地域、材料实验或实地研究经验的建筑申请者。",
         portfolio: "呈现环境证据如何驱动剖面、围护、构造与使用方式。",
         requirements: "建筑或 architectural studies 本科；按年度 studio 开放情况申请。",
+        interview: "官网未列为常规环节：以申请材料与作品集评审为主；2027 简章发布后复核。",
         warning: "不要只把极端环境当作视觉题材。",
         url: "https://kglakademi.dk/en/admission-master"
       },
@@ -322,13 +336,14 @@ window.SCHOOLS = [
         duration: "2 年",
         language: "英语",
         tuition: "最新公开：2026 call · 2027 学费待公布",
-        deadline: "最新：2026 轮面试 01.26—01.28 · 2027 待发布",
+        deadline: "最新：2026.03.01 · 2027 待公布",
         status: "最新公开：2026 · 2027 待更新",
         tags: ["城市", "社会转型", "公共性"],
         intro: "研究社会变化如何作用于城市及其空间实践，以城市设计和跨尺度策略回应城市化、公共生活与制度转型。",
         suitable: "有城市、住房、迁移、治理或公共空间项目的建筑申请者。",
         portfolio: "强化城市研究、图纸尺度和空间原型之间的连续性。",
         requirements: "建筑或 architectural studies 本科；具体要求按当年 studio。",
+        interview: "官网未列为常规环节：以申请材料与作品集评审为主；2027 简章发布后复核。",
         warning: "跨尺度研究不能替代建筑和空间表达。",
         url: "https://royaldanishacademy.com/en/programme/urbanism-and-societal-change"
       },
@@ -346,6 +361,7 @@ window.SCHOOLS = [
         suitable: "有计算设计、数字制造、材料实验或技术研究基础的建筑申请者。",
         portfolio: "说明计算方法如何改变空间、材料、构造和生产过程，避免只展示形式生成。",
         requirements: "国家认可建筑学院的 Bachelor in Architecture 或 architectural studies，并满足当轮英语及申请材料要求。",
+        interview: "官网未列为常规环节：以申请材料与作品集评审为主；2027 简章发布后复核。",
         warning: "数字工具必须服务于清晰的建筑问题和可验证的设计结果。",
         url: "https://royaldanishacademy.com/en/master-computation-in-architecture"
       },
@@ -363,6 +379,7 @@ window.SCHOOLS = [
         suitable: "建筑或设计背景中具有家具、室内、构件、材料及实体制作经验的申请者。",
         portfolio: "突出尺度、人体、材料、连接方式、原型和使用测试，并清楚标明个人制作贡献。",
         requirements: "建筑申请者按 MA Architecture 路径申请；须满足相应建筑本科及当轮材料要求。",
+        interview: "官网未列为常规环节：以申请材料与作品集评审为主；2027 简章发布后复核。",
         warning: "这是建筑与设计交叉项目，申请时必须选择正确的 Architecture programme application。",
         url: "https://royaldanishacademy.com/en/programme/furniture-design"
       },
@@ -380,6 +397,7 @@ window.SCHOOLS = [
         suitable: "有建筑、室内、展陈、装置或空间—物件跨尺度研究的申请者。",
         portfolio: "通过平剖、节点、材料样本、模型和使用情境证明空间设计能力。",
         requirements: "建筑申请者按 MA Architecture 路径申请；须满足相应建筑本科及当轮材料要求。",
+        interview: "官网未列为常规环节：以申请材料与作品集评审为主；2027 简章发布后复核。",
         warning: "不能只提交装置或氛围图，需要显示建筑尺度、技术和空间组织能力。",
         url: "https://royaldanishacademy.com/en/programme/spatial-design-0"
       },
@@ -397,6 +415,7 @@ window.SCHOOLS = [
         suitable: "关注景观城市主义、循环资源、生物材料、产业转型或社会—环境不稳定性的建筑申请者。",
         portfolio: "建立场地调查、资源流、跨尺度分析、材料实验与具体空间提案之间的连续性。",
         requirements: "建筑或 architectural studies 本科；项目在 Kalundborg 与哥本哈根建筑硕士分开申请。",
+        interview: "官网未列为常规环节：以申请材料与作品集评审为主；2027 简章发布后复核。",
         warning: "校区、申请入口与教学安排须按 2027 Kalundborg 招生页面单独确认。",
         url: "https://royaldanishacademy.com/en/programme/spatial-ecologies"
       },
@@ -414,6 +433,7 @@ window.SCHOOLS = [
         suitable: "希望把空间与设计能力延伸到创新策略、组织合作、服务或创业实践的建筑申请者。",
         portfolio: "除建筑成果外，呈现问题定义、利益相关者、协作过程、验证和实施逻辑。",
         requirements: "建筑申请者按 MA Architecture 路径申请；须满足相应建筑本科及当轮材料要求。",
+        interview: "官网未列为常规环节：以申请材料与作品集评审为主；2027 简章发布后复核。",
         warning: "项目并非传统建筑 studio 路径，职业目标应与战略设计和创业方向一致。",
         url: "https://royaldanishacademy.com/en/programme/strategic-design-entrepreneurship"
       }
@@ -440,6 +460,7 @@ window.SCHOOLS = [
       suitable: "已有扎实建筑本科训练、能够建立研究立场并持续迭代的成熟申请者。",
       portfolio: "证明连续的建筑教育基础与独立推进问题的能力；单一 PDF 格式按当轮要求。",
       requirements: "建筑本科或等值 180 ECTS、英语与 portfolio。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
       warning: "项目为 2.5 年而不是常见两年制；名额与学费不能固定承诺。",
       url: "https://www.aho.no/english/studies/programmes/master-of-architecture/admission/"
     }]
@@ -465,6 +486,7 @@ window.SCHOOLS = [
       suitable: "已有建筑本科、作者性强，希望在自由 studio 深化明确议题的申请者。",
       portfolio: "明确个人角色、过程、模型、材料、图纸与最终论证。",
       requirements: "至少完成建筑本科；成绩单、作品集及当轮申请材料。",
+        interview: "Year 4 现行申请说明未列面试；一年级申请的面试规则不适用于本项目。",
       warning: "不是面向所有本科背景的普通两年制转换硕士；非欧盟费用较高且无奖学金。",
       url: "https://bas.org/en/opptak/"
     }]
@@ -490,6 +512,7 @@ window.SCHOOLS = [
       suitable: "已有或愿长期投入意大利语，并对建筑文化、城市与设计批评有明确兴趣的申请者。",
       portfolio: "强调历史与设计的互相转译、强有力的平立剖以及实体和构造推理。",
       requirements: "建筑本科；成绩、课程表、CV、动机、作品集及推荐信等。",
+        interview: "可能（特定申请者）：部分需签证类别的入选申请者可能被要求参加约 5–10 分钟 Skype 面试。",
       warning: "不能列入“只需英语即可完成”的项目名单。",
       url: "https://www.arc.usi.ch/en/study-architecture/master/architecture"
     }]
@@ -515,6 +538,7 @@ window.SCHOOLS = [
       suitable: "建筑本科扎实，并有改造、修复、历史环境或理论—设计项目的申请者。",
       portfolio: "展示历史条件如何进入空间、图纸与材料判断，避免仅把城市当作图像风格。",
       requirements: "建筑或相当背景、英文 B2；名额、作品集和面试按年度 call。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
       warning: "不要与校内一年制 professional Master course 混淆；旧学费只是估算。",
       url: "https://www.unifi.it/en/study-us/degree-programmes/international-courses/international-degree-programmes"
     }]
@@ -540,6 +564,7 @@ window.SCHOOLS = [
       suitable: "有城市剖析、改造、修复或历史环境设计能力的建筑本科生。",
       portfolio: "用图纸和材料判断说明历史条件怎样转化为设计策略。",
       requirements: "建筑本科或经评估的等同背景；按年度 call 提交学历、课程、语言和作品集。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
       warning: "学费是最高额参考，语言考试与截止均以 2027 call 为准。",
       url: "https://www.iuav.it/en/didattica/lauree-magistrali/architecture"
     }]
@@ -566,6 +591,7 @@ window.SCHOOLS = [
         suitable: "图纸、构造、城市分析都较完整，且能证明课程匹配度的建筑本科生。",
         portfolio: "呈现从城市条件到建筑与构造的连续推演。",
         requirements: "学位、成绩、课程 syllabus、CV、语言、作品集与学历认证材料。",
+        interview: "通常不要求：非意大利学历申请以材料/作品集评审；特定资格或成绩路径可能另有测试/面谈。",
         warning: "先确认具体 curriculum 的授课语言；不能把双语要求套给全部项目。",
         url: "https://www.polito.it/en/education/applying-studying-graduating/admissions-and-enrolment/master-s-degree-programmes/applicants-with-a-non-italian-qualification"
       },
@@ -583,6 +609,7 @@ window.SCHOOLS = [
         suitable: "有环境策略、既有建筑更新或性能—空间整合项目的申请者。",
         portfolio: "让性能证据、材料与空间结果形成因果链。",
         requirements: "相关本科和课程匹配；英语 B2 及项目当轮材料。",
+        interview: "通常不要求：非意大利学历申请以材料/作品集评审；特定资格或成绩路径可能另有测试/面谈。",
         warning: "全英文项目不额外要求意大利语 B2。",
         url: "https://www.polito.it/en/education/applying-studying-graduating/admissions-and-enrolment/master-s-degree-programmes/applicants-with-a-non-italian-qualification"
       },
@@ -600,6 +627,7 @@ window.SCHOOLS = [
         suitable: "有建筑史、测绘、修复、再利用或遗产介入项目的申请者。",
         portfolio: "用现状、病理或历史研究支持具体空间和构造决策。",
         requirements: "相关建筑背景、课程先修及具体语言配置。",
+        interview: "通常不要求：非意大利学历申请以材料/作品集评审；特定资格或成绩路径可能另有测试/面谈。",
         warning: "必须读取对应 academic regulations，不能只按学校总名申请。",
         url: "https://www.polito.it/en/education/applying-studying-graduating/admissions-and-enrolment/master-s-degree-programmes/applicants-with-a-non-italian-qualification"
       }
@@ -626,6 +654,7 @@ window.SCHOOLS = [
       suitable: "有原创空间方法、材料实验和环境观察的建筑申请者。",
       portfolio: "呈现独立探索和可落地的建筑尺度证据，不把冰岛仅当作视觉题材。",
       requirements: "建筑本科或足够建筑训练、作品集和项目申请文件；英语要求按当轮。",
+        interview: "必需（入围后）：学校会邀请入围申请者参加面试。",
       warning: "自 2026 秋起非 EEA 等申请者开始收学费，旧 ISK 100,000 不是可靠年学费。",
       url: "https://www.lhi.is/en/namsleid/architects-include/"
     }]
@@ -651,6 +680,7 @@ window.SCHOOLS = [
       suitable: "需要高频反馈、希望强化专业设计与表达的建筑本科生。",
       portfolio: "概念必须转化为建筑方案、技术与场地关系。",
       requirements: "建筑本科、学历成绩、portfolio、动机及在线系统材料。",
+        interview: "可能：材料审核后，学校可能要求申请者参加线上面试。",
       warning: "非 EU 与签证申请者应提前确认；旧 2 月截止不再可靠。",
       url: "https://www.archip.eu/master-programme/"
     }]
@@ -676,6 +706,7 @@ window.SCHOOLS = [
       suitable: "希望紧密导师沟通，并有材料、结构、环境或地域设计作品的建筑本科生。",
       portfolio: "突出专注的建筑问题、图纸、模型与材料工作，并说明与可选 major 的关联。",
       requirements: "相关建筑学士（通常 180 ECTS）、portfolio、学历与成绩材料。",
+        interview: "可能：录取/咨询流程可能安排面谈；项目页未说明每位申请者都必须参加。",
       warning: "非 EU 截止通常早于 EU；语言证书与具体 major 每年核查。",
       url: "https://www.uni.li/en/studies/study-programmes/msc-architecture"
     }]
@@ -701,6 +732,7 @@ window.SCHOOLS = [
       suitable: "建筑本科课程完整、设计与技术基本功强，已具备或能够按期取得德语 C1，并能完成实践要求的申请者。",
       portfolio: "A4 数字 PDF、最多 15 页；3 个在校项目且至少 2 个为设计项目，突出设计表达、场地回应及材料和构造尺度的资源判断。",
       requirements: "建筑本科或等值教育；申请截止前提交认可的德语 C1；国际学历接受课程等值审查，取得学位前须证明至少 6 个月建筑或建造行业实践。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
       warning: "核心 Architecture MSc 不能仅凭英语规划。部分课程或考试可用英语，不代表英语证书可替代德语 C1；Landscape Architecture 是另一专业。",
       url: "https://ethz.ch/en/studies/master/application/master-architektur.html"
     }]
@@ -726,6 +758,7 @@ window.SCHOOLS = [
       suitable: "学业和建筑基本功强，已有规定长度的实践，并愿意在英语之外建立法语工作能力的申请者。",
       portfolio: "版面不大于 A4，优先学术设计项目；呈现图纸精度、多样表达、建筑到城市和领土的尺度变化，以及从概念到材料性的完整链条。",
       requirements: "优秀建筑本科；须有 12 个月实践，其中至少连续 6 个月在同一建筑单位。学校建议法语或英语一门优秀、另一门良好，并建议教学语言至少 C1。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
       warning: "这是法英双语环境，不能保证所有 studio 与课程均可零法语完成；实践年限是申请前必须优先核查的硬条件。",
       url: "https://www.epfl.ch/education/master/programs/architecture/"
     }]
@@ -752,6 +785,7 @@ window.SCHOOLS = [
         suitable: "建筑本科和课程匹配度高，希望继续全面专业建筑训练，并能同时呈现空间、技术和既有环境判断的申请者。",
         portfolio: "展示完整建筑设计链条：概念、总图、平立剖、空间、结构、材料与技术整合；不要只用旧项目名定位申请方向。",
         requirements: "建筑本科、课程匹配与作品集；中国学历当前最低 GPA 80%。所有 MSc 申请者须提交认可的英语证明，当前 IELTS 6.0 等；一次最多申请两个 MSc。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "须在英语与意大利语教学路径中明确选择；英文项目国际生仍有毕业前完成 Italian OFA 的义务。建筑与设计仅 9 月入学。",
         url: "https://www.polimi.it/en/education/laurea-magistrale-programmes/programme-detail/architecture"
       },
@@ -769,6 +803,7 @@ window.SCHOOLS = [
         suitable: "对历史城市、遗产、更新与当代介入有持续项目积累，能够把历史判断转译为空间和材料策略的建筑本科生。",
         portfolio: "强化测绘和场地证据、历史条件、保护与更新策略、建筑空间和材料构造之间的连续性。",
         requirements: "建筑本科等值性、既往学业与作品集比较评审；中国学历当前最低 GPA 80%，所有 MSc 申请者须满足英语要求。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "全英文不等于只看概念表达；历史研究必须落实到可读的建筑图纸、修复判断与当代设计结果。国际生仍有 Italian OFA。",
         url: "https://www.polimi.it/en/education/laurea-magistrale-programmes/programme-detail/architectural-design-and-history"
       },
@@ -786,6 +821,7 @@ window.SCHOOLS = [
         suitable: "具有建筑—景观、多尺度生态、气候适应或公共空间项目，并能用证据支撑设计判断的建筑本科生。",
         portfolio: "用场地、生态和气候证据建立从领土、景观到建筑与材料的尺度链条，避免把可持续简化为性能标签。",
         requirements: "建筑本科、课程匹配与作品集；中国学历当前最低 GPA 80%，所有 MSc 申请者须满足英语要求。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "这是建筑与景观设计研究路径，不等于普通 Landscape Architecture，也不应只做环境性能展示。国际生仍有 Italian OFA。",
         url: "https://www.polimi.it/en/education/laurea-magistrale-programmes/programme-detail/sustainable-architecture-and-landscape-design"
       }
@@ -813,6 +849,7 @@ window.SCHOOLS = [
         suitable: "已有建筑或相关专业训练，希望把计算工具、系统研究与实验性建筑命题结合的申请者。",
         portfolio: "突出研究问题、迭代过程、团队中的个人贡献，以及技术方法如何产生可读的空间与建筑结果。",
         requirements: "相关本科或专业背景、数字作品集、个人陈述、推荐材料与英语证明；最终按 2027 admissions page 核查。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "这是 16 个月的 post-professional MArch，不应自动等同于英国职业注册 Part 2 路径。",
         url: "https://www.aaschool.ac.uk/school/programmes/taught-postgraduate-programmes/architecture-and-urbanism-drl"
       },
@@ -830,6 +867,7 @@ window.SCHOOLS = [
         suitable: "具备建筑、工程、计算或材料基础，希望进行技术—设计交叉研究的申请者。",
         portfolio: "说明算法、实验、模拟或制造如何改变结构、材料、环境表现和空间，而不是只展示形式生成。",
         requirements: "建筑、工程或相关本科；数字作品集、申请陈述、推荐材料及英语证明按当轮要求。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "MArch 与 MSc 的既往学历资格和毕业成果不同，申请前必须确认适用学位路线。",
         url: "https://www.aaschool.ac.uk/school/programmes/taught-postgraduate-programmes/emergent-technologies-and-design"
       },
@@ -847,6 +885,7 @@ window.SCHOOLS = [
         suitable: "有住房、城市更新、公共空间、社会研究或城市政策项目，并希望保持空间设计介入的申请者。",
         portfolio: "用城市证据、空间类型、政策条件与建筑或城市设计方案形成连续论证。",
         requirements: "相关本科或专业经验；MA 与 MArch 分别按当轮学历、作品集和研究材料要求申请。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "MA 和 MArch 的学制及成果要求不同；项目关注城市主义，不是通用职业建筑硕士。",
         url: "https://www.aaschool.ac.uk/school/programmes/taught-postgraduate-programmes/housing-and-urbanism"
       },
@@ -864,6 +903,7 @@ window.SCHOOLS = [
         suitable: "已有气候、被动式设计、环境模拟、既有建筑更新或性能—空间整合经验的申请者。",
         portfolio: "让气候数据、使用行为和性能验证对应到剖面、围护、材料、系统与空间选择。",
         requirements: "建筑、工程或相关背景；MSc/MArch 资格、作品集、陈述和英语证明以 2027 当轮为准。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "不要把环境分析图当作建筑结果；MSc 与 MArch 路线也不自动具有相同职业资格。",
         url: "https://www.aaschool.ac.uk/school/programmes/taught-postgraduate-programmes/sustainable-environmental-design"
       }
@@ -890,6 +930,7 @@ window.SCHOOLS = [
       suitable: "已取得 Part 1 或可确认等值、能落实入学前工作安置，并希望走英国职业建筑路径的申请者。",
       portfolio: "呈现完整建筑设计、技术整合和批判反思，同时用实践项目说明个人职责与专业成长。",
       requirements: "建筑 Part 1 或等值；入学前须自行落实符合要求的 architectural practice placement，另按当轮提交作品集、学历及英语材料。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
       warning: "第一年实践岗位需在注册前取得；中国建筑本科不能只凭学位名称假定 Part 1 等值。",
       url: "https://www.cardiff.ac.uk/study/postgraduate/taught/courses/course/master-of-architecture-march"
     }]
@@ -916,6 +957,7 @@ window.SCHOOLS = [
         suitable: "希望从建筑类型、城市形态与公共生活关系深化设计研究的建筑申请者。",
         portfolio: "突出建筑与城市尺度转换、类型与公共空间判断，以及清晰的个人研究问题。",
         requirements: "相关本科、数字作品集、陈述、推荐及英语证明，按学校 2027 applicant guidelines 核查。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "官网当前将该路径标为 subject to validation；学位名称、开放状态和费用必须在 2027 申请前再次确认。",
         url: "https://www.gsa.ac.uk/postgraduate-degrees/master-of-architectural-studies-urban-buildings"
       },
@@ -933,6 +975,7 @@ window.SCHOOLS = [
         suitable: "已有环境设计、低碳、改造、性能模拟或气候适应项目的建筑申请者。",
         portfolio: "用可核验的环境证据说明设计变化，并保留完整建筑图纸与材料、构造判断。",
         requirements: "相关本科与数字作品集；具体语言、文件格式和面试按 2027 指南。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "官网当前将该路径标为 subject to validation；不可把暂定课程信息写成已确认 2027 offer 条件。",
         url: "https://www.gsa.ac.uk/postgraduate-degrees/master-of-architectural-studies-energy-and-environment"
       },
@@ -950,6 +993,7 @@ window.SCHOOLS = [
         suitable: "具备数字设计、交互、制造或新媒介实践，同时能够落实建筑尺度结果的申请者。",
         portfolio: "展示数字方法、实验过程与空间或建造结果之间的因果关系，避免纯软件效果展示。",
         requirements: "相关本科、数字作品集和项目申请材料；2027 开放与验证状态须以官网为准。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "官网当前将该路径标为 subject to validation；正式学位结构和课程内容仍可能调整。",
         url: "https://www.gsa.ac.uk/postgraduate-degrees/master-of-architectural-studies-digital-creativity"
       }
@@ -977,6 +1021,7 @@ window.SCHOOLS = [
         suitable: "具备 Part 1 或可确认等值、建筑设计基本功完整，并希望走英国 Part 2 路径的申请者。",
         portfolio: "提供从命题到综合设计、技术、环境与表达的完整项目，并说明实践经验与个人贡献。",
         requirements: "Part 1 或学校认可的等值建筑资格、作品集、陈述、学历与英语材料；海外资格先做等值核查。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "联合授予不改变 Part 1/Part 2 资格门槛；中国本科申请者应在投入作品集前确认资格可接受性。",
         url: "https://www.manchester.ac.uk/study/masters/courses/list/09342/march-architecture/"
       },
@@ -994,6 +1039,7 @@ window.SCHOOLS = [
         suitable: "有既有建筑改造、遗产、材料、社区或低碳更新项目，希望进入专题硕士的申请者。",
         portfolio: "把现状调查、价值判断、保留与拆改策略、环境和构造细节连接为完整更新方案。",
         requirements: "相关建筑或设计背景、作品集、个人陈述、学历与英语材料，具体标准按 2027 页面。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "这是 1 年制专题 MA，不是 MArch Part 2 的替代品。",
         url: "https://www.manchester.ac.uk/study/masters/courses/list/20076/ma-architecture-and-adaptive-reuse/"
       },
@@ -1011,6 +1057,7 @@ window.SCHOOLS = [
         suitable: "已有城市、住房、公共空间、规划或跨尺度建筑项目，希望发展研究—设计结合能力的申请者。",
         portfolio: "呈现田野、地图、城市证据与建筑或城市设计命题的连续性。",
         requirements: "相关本科、作品集与申请材料；入学条件和英语要求以 2027 官网为准。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "这是 1 年制 Architecture and Urbanism MA，不授予 Part 2。",
         url: "https://www.manchester.ac.uk/study/masters/courses/list/07785/ma-architecture-and-urbanism/"
       }
@@ -1038,6 +1085,7 @@ window.SCHOOLS = [
         suitable: "具备 Part 1 或等值、希望结合个人研究、综合建筑设计和社区实践的申请者。",
         portfolio: "突出复杂建筑项目的完整性、研究主题、技术与生态判断，以及实际制作或社区合作经验。",
         requirements: "Part 1 或经确认的等值建筑资格、作品集、学历和英语材料；国际资格须提前核查。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "可选城市设计/规划模块不等于另授城市设计学位；Part 2 门槛仍适用。",
         url: "https://www.ncl.ac.uk/postgraduate/degrees/5843f/"
       },
@@ -1055,6 +1103,7 @@ window.SCHOOLS = [
         suitable: "已完成建筑或相关设计本科，希望深化独立设计研究但不以 Part 2 为直接目标的申请者。",
         portfolio: "用一至两个完整项目证明研究命题、反复推演、建筑表达和技术—环境整合能力。",
         requirements: "相关本科、设计作品集、个人陈述、学历和英语材料，以 2027 course page 为准。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "MSc Advanced Architectural Design 不是 Part 2 职业资格课程。",
         url: "https://www.ncl.ac.uk/postgraduate/degrees/5383f/"
       }
@@ -1082,6 +1131,7 @@ window.SCHOOLS = [
         suitable: "已具 Part 1 或等值、个人立场鲜明，能把批判议题转化为成熟建筑设计的申请者。",
         portfolio: "精选少量项目说明问题、方法、反思与空间结果；视频陈述需围绕作品过程和个人贡献。",
         requirements: "Part 1 或可接受等值背景、作品集与两分钟视频等当轮材料；英语当前为 IELTS 6.5、单项 5.5。",
+        interview: "少数情况可能：2027 硕士流程仅在无法凭材料决定时安排线上或现场面试。",
         warning: "RCA 的学位名为 MA Architecture，但属于两年制 Part 2；不要因 MA 名称把它与一年制专题硕士混淆。",
         url: "https://www.rca.ac.uk/study/programme-finder/architecture-ma/"
       },
@@ -1099,6 +1149,7 @@ window.SCHOOLS = [
         suitable: "来自建筑、景观、规划或相关领域，并关注住房、治理、气候和空间正义的申请者。",
         portfolio: "用城市证据、利益相关者、政策条件与空间提案建立清晰论证，说明设计的公共后果。",
         requirements: "相关本科或专业经验、作品集、陈述/视频等当轮材料；当前英语为 IELTS 6.5、单项 5.5。",
+        interview: "少数情况可能：2027 硕士流程仅在无法凭材料决定时安排线上或现场面试。",
         warning: "这是 1 年制 City Design MA，不等于职业建筑 Part 2。",
         url: "https://www.rca.ac.uk/study/programme-finder/city-design-ma/"
       },
@@ -1116,6 +1167,7 @@ window.SCHOOLS = [
         suitable: "关注领土、景观、环境冲突、社区与气候正义，并能接受跨学科田野研究的申请者。",
         portfolio: "展示场地与利益相关者研究、环境证据、媒介实验和空间介入之间的关系，不把项目缩成绿色技术展示。",
         requirements: "相关本科或经验、作品集及当轮陈述材料；当前英语为 IELTS 6.5、单项 5.5。",
+        interview: "少数情况可能：2027 硕士流程仅在无法凭材料决定时安排线上或现场面试。",
         warning: "项目更接近环境设计研究和实践，不是传统建筑师综合训练或 Part 2。",
         url: "https://www.rca.ac.uk/study/programme-finder/environmental-architecture-ma/"
       }
@@ -1143,6 +1195,7 @@ window.SCHOOLS = [
         suitable: "已取得 Part 1 或学校认可等值、建筑基本功强，能适应高强度 unit 文化的申请者。",
         portfolio: "用完整项目证明概念、场地、空间、技术、材料和表达能力，并明确设计过程及个人贡献。",
         requirements: "Part 1 或可接受的等值建筑背景、设计作品集及当轮申请材料；海外学历资格须先核查。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "2026/27 海外学费所列为第一年，第二年可能调整；非英国 Part 1 学历不能自动视为等值。",
         url: "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/architecture"
       },
@@ -1160,6 +1213,7 @@ window.SCHOOLS = [
         suitable: "有实验设计、计算、机器人、AI、制造或新媒介基础，希望进入 B-Pro 研究环境的申请者。",
         portfolio: "说明技术实验的建筑问题、过程和结果；代码、算法或机器输出必须对应空间、材料或建造判断。",
         requirements: "合适专业本科或相关经验、设计/创意作品集及申请材料；当前英语为 UCL Level 1。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "这是 1 年制 post-professional MArch，不是 Bartlett Architecture MArch Part 2。",
         url: "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/architectural-design"
       },
@@ -1177,6 +1231,7 @@ window.SCHOOLS = [
         suitable: "具有建筑、城市、景观或规划设计基础，并能在大尺度证据与空间精度之间转换的申请者。",
         portfolio: "呈现城市分析、形态规则、公共空间、类型与设计方案之间的连续推演。",
         requirements: "相关本科或专业经验、设计作品集和当轮申请材料；英语标准按 UCL Level 1。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "Urban Design MArch 为一年制专题项目，不属于 Architecture MArch Part 2。",
         url: "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/urban-design"
       },
@@ -1194,6 +1249,7 @@ window.SCHOOLS = [
         suitable: "具备建筑、设计、工程或科学基础，愿意进行长期材料、生物与计算实验的申请者。",
         portfolio: "强调实验设计、记录、失败与迭代，并把微观材料或生物过程转化到建筑和环境尺度。",
         requirements: "合适学科本科、作品集及当轮申请文件；申请者需证明可承担跨学科技术课程。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "这是两年制跨学科 MArch，不等同于 Part 2；第二年费用和具体 research stream 须按当轮确认。",
         url: "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/bio-integrated-design"
       }
@@ -1220,6 +1276,7 @@ window.SCHOOLS = [
       suitable: "已有高质量建筑本科、Part 1 等值与约 9 个月实践，并重视设计—技术整合的申请者。",
       portfolio: "约 30 面 A3，重点呈现最终项目的概念与分析、总体和三维空间、材料性与细部，并控制实习作品比例。",
       requirements: "高 2:1 或等值建筑本科、Part 1 或通过 ARB prescribed examination；通常要求毕业后 9 个月实践，当前 IELTS 7.0、单项 6.5。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
       warning: "Bath 将 MArch 按 undergraduate funding/course 体系管理；海外申请者的 Part 1 等值是注册前硬条件。",
       url: "https://www.bath.ac.uk/courses/undergraduate-2026/architecture/march-architecture/"
     }]
@@ -1246,6 +1303,7 @@ window.SCHOOLS = [
         suitable: "具备 Part 1 或可接受等值、学术成绩与建筑设计能力都很强，并有清晰研究兴趣的申请者。",
         portfolio: "以完整建筑设计、研究严谨性、技术整合和独立判断为主，避免只用学术写作或视觉风格代替综合项目。",
         requirements: "Part 1 或学校接受的等值资格、作品集与当轮申请材料；具体实践和英语条件以项目重开页面为准。",
+        interview: "不适用：该旧 MArch 已停止招生，2025 年 10 月起不再接受新申请。",
         warning: "官网显示 2026 cycle 不再接受申请；2027 是否开放必须在 2026 年秋重新确认，不能预先承诺可申请。",
         url: "https://www.arct.cam.ac.uk/courses/postgraduate/master-architecture-march-degree-arbriba-part-2"
       },
@@ -1263,6 +1321,7 @@ window.SCHOOLS = [
         suitable: "有强学术写作、研究方法和建筑/城市问题意识，计划进入研究、政策或博士路径的申请者。",
         portfolio: "若当轮要求提交视觉材料，应围绕研究问题选择；研究计划、写作和方法能力比作品数量更重要。",
         requirements: "高水平相关本科、研究陈述、推荐和英语证明；当前页面列较高英语要求，2027 以正式目录为准。",
+        interview: "必需（入围后）：入围申请者参加线上面试。",
         warning: "这是 9 个月研究型 MPhil，不是 MArch、Part 2 或通用建筑设计 studio 项目。",
         url: "https://www.postgraduate.study.cam.ac.uk/courses/directory/aharmpaus"
       }
@@ -1290,6 +1349,7 @@ window.SCHOOLS = [
         suitable: "具备 Part 1 或可接受等值，希望把独立建筑立场、社会环境责任与职业能力结合的申请者。",
         portfolio: "用完整项目说明场所、材料、碳、社会关系和技术如何共同形成建筑判断。",
         requirements: "Part 1 或学校认可的等值建筑资格、portfolio、学历、陈述和英语材料；国际资格先核查。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "MArch 属 Part 2 路径；不要与 ESALA 的一年制研究型 MSc 混为同一资格。",
         url: "https://study.ed.ac.uk/programmes/postgraduate-taught/420-architecture-master-of-arbriba-part-2"
       },
@@ -1307,6 +1367,7 @@ window.SCHOOLS = [
         suitable: "有环境设计、模拟、低碳建筑、再利用或建筑科学基础的申请者。",
         portfolio: "用性能证据、剖面、围护、系统、材料和使用模式说明环境策略的空间后果。",
         requirements: "建筑或相关建成环境本科，申请材料与英语要求按 2027 degree finder。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "这是 1 年制 MSc，不授予 Part 2；技术分析不能替代建筑设计能力。",
         url: "https://study.ed.ac.uk/programmes/postgraduate-taught/417-advanced-sustainable-design"
       },
@@ -1324,6 +1385,7 @@ window.SCHOOLS = [
         suitable: "有建筑—景观、生态场地、领土或环境艺术实践，希望跨学科深化的申请者。",
         portfolio: "展示从现场观察和环境证据到景观、建筑与材料介入的尺度链条。",
         requirements: "建筑、景观、艺术或相关设计背景；作品集和英语要求以 2027 页面为准。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "这是一年制跨学科 MSc，不等同于 Architecture MArch 或专业 Landscape Architecture MLA。",
         url: "https://study.ed.ac.uk/programmes/postgraduate-taught/1096-architecture-landscape-and-environment"
       },
@@ -1341,6 +1403,7 @@ window.SCHOOLS = [
         suitable: "来自建筑、景观、规划、地理或社会科学，关注城市转型和社会可持续性的申请者。",
         portfolio: "设计背景者用空间方案证明策略；非设计背景者则强化城市研究、数据、图示与介入方法。",
         requirements: "接受多学科背景；学历、陈述、可能的作品材料和英语条件以 2027 当轮为准。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "项目不提供职业建筑资格，也不是纯粹建筑 studio；申请叙事必须体现城市策略与跨学科能力。",
         url: "https://study.ed.ac.uk/programmes/postgraduate-taught/822-urban-strategies-and-design"
       }
@@ -1368,6 +1431,7 @@ window.SCHOOLS = [
         suitable: "具备 Part 1 或可接受等值，关注社区、公共性和真实项目，同时能完成综合建筑设计的申请者。",
         portfolio: "除完整建筑方案外，突出与真实使用者、组织或场地合作的研究过程、反馈和设计后果。",
         requirements: "Part 1 或学校认可等值、作品集、500–600 字 statement、学历及英语材料。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "国际建筑本科需先确认 Part 1 等值与 funding/qualification 规则；Live Project 不降低综合设计门槛。",
         url: "https://sheffield.ac.uk/postgraduate/taught/courses/2026/architecture-march"
       },
@@ -1385,6 +1449,7 @@ window.SCHOOLS = [
         suitable: "希望深化设计方法、社会环境议题和 research through design，但不直接申请 Part 2 的申请者。",
         portfolio: "展示过程、方法、真实问题与建筑结果，避免只交成图；社会与环境主张应有空间证据。",
         requirements: "相关本科、设计作品集、陈述与英语证明，具体材料按 2027 项目页。",
+        interview: "官网未列为常规环节：按申请材料/作品集评审；2027 简章发布后复核。",
         warning: "Architectural Design MA 是一年制研究型设计硕士，不等于 Architecture MArch Part 2。",
         url: "https://sheffield.ac.uk/postgraduate/taught/courses/2026/architectural-design-ma"
       }
