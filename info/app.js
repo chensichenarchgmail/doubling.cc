@@ -278,6 +278,7 @@ function renderProject(program) {
           <div class="content-block"><h2>适合怎样的申请者</h2><p>${esc(program.suitable)}</p></div>
           <div class="content-block"><h2>作品集重点</h2><p>${esc(program.portfolio)}</p></div>
           <div class="content-block"><h2>基本资格与材料</h2><p>${esc(program.requirements)}</p></div>
+          <div class="content-block"><h2>面试要求</h2><p>${esc(program.interview)}</p></div>
         </div>
         <aside class="project-side">
           <button class="button button-orange" type="button" data-compare="${program.id}">加入比较</button>
@@ -317,7 +318,7 @@ function renderCompare() {
   const slots = [0, 1, 2, 3, 4];
   const rows = [
     ["学制", "duration"], ["授课语言", "language"], ["非欧盟学费", "tuition"], ["申请节点", "deadline"],
-    ["主要方向", "intro"], ["适合申请者", "suitable"], ["作品集重点", "portfolio"], ["资格与材料", "requirements"], ["需要注意", "warning"]
+    ["主要方向", "intro"], ["适合申请者", "suitable"], ["作品集重点", "portfolio"], ["资格与材料", "requirements"], ["面试要求", "interview"], ["需要注意", "warning"]
   ];
   const selected = slots.map((i) => programById(state.compare[i]));
   const options = (current) => `<option value="">选择一个项目</option>${schools.map((school) =>
