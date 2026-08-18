@@ -19,7 +19,6 @@ const state = {
   compare: JSON.parse(localStorage.getItem("doubling-test-compare") || "[]").slice(0, 5),
   portfolio: JSON.parse(localStorage.getItem("doubling-test-portfolio") || "[]"),
   abilities: JSON.parse(localStorage.getItem("doubling-test-abilities") || "[]"),
-  timeline: JSON.parse(localStorage.getItem("doubling-test-timeline") || "[]").slice(0, 8),
   differencesOnly: false
 };
 
@@ -179,7 +178,6 @@ function renderHome() {
         <a class="quick-card" href="${href("directions")}" data-link="directions"><span class="eyebrow">01 Explore</span><strong>从方向理解项目</strong><p>比较不同学校如何定义同一个方向。</p></a>
         <a class="quick-card" href="${href("portfolio")}" data-link="portfolio"><span class="eyebrow">02 Match</span><strong>从作品集反向找项目</strong><p>显示透明的匹配理由，不预测录取。</p></a>
         <a class="quick-card" href="${href("diagnosis")}" data-link="diagnosis"><span class="eyebrow">03 Diagnose</span><strong>检查证据结构</strong><p>研究、图纸、材料、过程与个人贡献。</p></a>
-        <a class="quick-card" href="${href("timeline")}" data-link="timeline"><span class="eyebrow">04 Plan</span><strong>生成申请时间线</strong><p>汇总项目节点与提交清单。</p></a>
       </section>
       <section class="filters" aria-label="筛选">
         <input class="search" type="search" placeholder="搜索学校、城市、项目或方向" aria-label="搜索" value="${esc(state.query)}" data-search />
@@ -457,8 +455,8 @@ function renderProject(program) {
     <div class="numbered-block"><span class="num">04</span><div><h2>Portfolio</h2><p>${esc(program.portfolio)}</p><div class="tags">${signals.map((s)=>`<span class="tag">+ ${esc(s)}</span>`).join("")}</div></div></div>
     <div class="numbered-block"><span class="num">05</span><div><h2>Fit</h2><p>${esc(program.suitable)}</p></div></div>
     <div class="numbered-block"><span class="num">06</span><div><h2>Sources & status</h2><p>${esc(program.status)}。数据库核验于 2026.08.17；带“待更新”的日期、费用与格式必须在当轮网申开放后复核。</p><div class="source-stack"><a href="${esc(program.url)}" target="_blank" rel="noopener noreferrer">学校官方项目页 ↗</a></div></div></div>
-    </div><aside class="project-side"><button class="button button-orange" type="button" data-compare="${program.id}">加入比较</button><button class="button" type="button" data-add-timeline="${program.id}">加入时间线</button><div class="warning"><span class="eyebrow">申请判断</span><p>${esc(program.warning)}</p></div></aside></section></div>`;
-  bindInternalLinks(); bindCompareButtons(); document.querySelector("[data-add-timeline]").onclick=()=>{ if(!state.timeline.includes(program.id)&&state.timeline.length<8) state.timeline.push(program.id); localStorage.setItem("doubling-test-timeline",JSON.stringify(state.timeline)); navigate("timeline"); };
+    </div><aside class="project-side"><button class="button button-orange" type="button" data-compare="${program.id}">加入比较</button><div class="warning"><span class="eyebrow">申请判断</span><p>${esc(program.warning)}</p></div></aside></section></div>`;
+  bindInternalLinks(); bindCompareButtons();
 }
 
 function matchPortfolio() {
@@ -478,14 +476,6 @@ function renderDiagnosis() {
   document.querySelectorAll("[data-ability]").forEach((button)=>{button.onclick=()=>{const id=button.dataset.ability;state.abilities=state.abilities.includes(id)?state.abilities.filter((x)=>x!==id):[...state.abilities,id];localStorage.setItem("doubling-test-abilities",JSON.stringify(state.abilities));renderDiagnosis();};});document.querySelector("[data-clear]").onclick=()=>{state.abilities=[];localStorage.removeItem("doubling-test-abilities");renderDiagnosis();};
 }
 
-function renderTimeline() {
-  const selected=state.timeline.map(programById).filter(Boolean), available=programs.filter((p)=>!state.timeline.includes(p.id));
-  const phases=[["2026 AUG–SEP","资格审查与母版结构","确认本科背景、语言路径和资格风险；完成项目取舍与缺口诊断。"],["2026 SEP–OCT","项目重构与证据补齐","补齐过程、平剖、构造、材料、环境与个人贡献，不先做最终排版。"],["2026 OCT–NOV","完成母版作品集","形成完整版本，并为不同教学模式准备不同项目顺序与摘要。"],["2026 NOV–DEC","按学校生成申请版本","核验页数、文件大小、匿名、CV、动机信、AI 声明和推荐信。"],["2026 DEC–2027 SPRING","提交、面试与签证","按当前公开节点提交；待更新项目必须先回到官网复核。"]];
-  const checklist=["Programme 名称与方向","学历与成绩单","英语 / 当地语言","作品集页数与大小","个人贡献标注","CV 与动机信","推荐信 / Essay / Video","AI 使用声明","申请费与材料截止","面试准备","职业资格复核","签证时间预留"];
-  app.innerHTML=`<div class="page">${moduleHero("My 2027 timeline","申请时间线","选择最多 8 个项目，把共通准备阶段、项目当前公开节点和提交前检查放在同一页。")}<section class="timeline-controls"><select data-add><option value="">添加一个项目</option>${schools.map((school)=>`<optgroup label="${esc(school.cn)}">${school.programs.filter((p)=>available.some((a)=>a.id===p.id)).map((p)=>`<option value="${p.id}">${esc(p.name)}</option>`).join("")}</optgroup>`).join("")}</select><button class="button" data-use-compare>导入比较组合</button></section><div class="saved-strip">${selected.map((p)=>`<span class="saved-pill">${esc(p.school.cn)} · ${esc(p.name)} <button data-timeline-remove="${p.id}">×</button></span>`).join("")||`<span class="module-note">尚未选择项目。</span>`}</div><section class="timeline">${phases.map(([date,title,copy],i)=>`<article class="timeline-item"><div class="timeline-date">${date}</div><div class="timeline-body"><h3>${title}</h3><p>${copy}</p>${i===phases.length-1&&selected.length?`<div class="checklist">${selected.map((p)=>{const f=decisionFreshness(p);return `<div class="check-item"><strong>${esc(p.school.cn)} · ${esc(p.name)}</strong><br>${esc(p.deadline)}<br><span class="status-badge ${f.cls}" style="margin-top:8px">${f.label}</span></div>`;}).join("")}</div>`:""}</div></article>`).join("")}</section><div class="section-title"><h2>提交前 Checklist</h2><span>逐项目复核</span></div><section class="checklist">${checklist.map((item)=>`<div class="check-item">□ ${esc(item)}</div>`).join("")}</section></div>`;
-  document.querySelector("[data-add]").onchange=(e)=>{if(e.target.value&&state.timeline.length<8)state.timeline.push(e.target.value);localStorage.setItem("doubling-test-timeline",JSON.stringify(state.timeline));renderTimeline();};document.querySelector("[data-use-compare]").onclick=()=>{state.timeline=[...new Set([...state.timeline,...state.compare])].slice(0,8);localStorage.setItem("doubling-test-timeline",JSON.stringify(state.timeline));renderTimeline();};document.querySelectorAll("[data-timeline-remove]").forEach((button)=>{button.onclick=()=>{state.timeline=state.timeline.filter((id)=>id!==button.dataset.timelineRemove);localStorage.setItem("doubling-test-timeline",JSON.stringify(state.timeline));renderTimeline();};});
-}
-
 function renderCompare() {
   const selected=[0,1,2,3,4].map((i)=>programById(state.compare[i]));
   const groups=[["Programme",[["学位类型","degree"],["教学模式",(p)=>decisionTeaching(p).model],["申请机制",(p)=>decisionTeaching(p).mechanism],["方向选择时间",(p)=>decisionTeaching(p).when],["核心方向",(p)=>decisionDirectionsFor(p).map((d)=>d.label).join(" / ")]]],["Admission",[["学制","duration"],["授课语言","language"],["非欧盟学费","tuition"],["申请节点","deadline"],["资格与材料","requirements"],["面试","interview"]]],["Portfolio",[["作品集要求","portfolio"],["应强化的证据",(p)=>portfolioSignals(p).join(" / ")||"完整建筑项目"]]],["Student fit",[["适合申请者","suitable"],["需要注意","warning"],["信息状态",(p)=>decisionFreshness(p).label]]]];
@@ -503,7 +493,6 @@ function renderRoute() {
   else if (view === "directions") renderDirections(id);
   else if (view === "portfolio") renderPortfolio();
   else if (view === "diagnosis") renderDiagnosis();
-  else if (view === "timeline") renderTimeline();
   else if (view === "compare") renderCompare();
   else if (view === "contact") renderContact();
   else renderHome();
