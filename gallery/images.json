@@ -82,28 +82,10 @@
       "animated": false
     },
     {
-      "filename": "第一顿1 (1).jpg",
-      "title": "第一顿 · 1 (1)",
-      "original": "/assets/images/gallery/6903e233e77a3f89.jpg",
-      "thumbnail": "/assets/images/gallery/thumbnails/6903e233e77a3f89.webp",
-      "width": 3000,
-      "height": 4000,
-      "animated": false
-    },
-    {
       "filename": "第一顿2.jpg",
       "title": "第一顿 · 2",
       "original": "/assets/images/gallery/bffeda482bb952cc.jpg",
       "thumbnail": "/assets/images/gallery/thumbnails/bffeda482bb952cc.webp",
-      "width": 3000,
-      "height": 4000,
-      "animated": false
-    },
-    {
-      "filename": "第一顿2-2.jpg",
-      "title": "第一顿 · 2-2",
-      "original": "/assets/images/gallery/3bef1629e4136da1.jpg",
-      "thumbnail": "/assets/images/gallery/thumbnails/3bef1629e4136da1.webp",
       "width": 3000,
       "height": 4000,
       "animated": false
