@@ -26,6 +26,12 @@ const articles = [
     tags: ["Lina Bo Bardi", "展览批评", "贫困浪漫化", "生存的文明", "劳动", "公共性", "博物馆", "意识形态"],
     searchableText: "生存的诗学 生存的文明 东北展览 匮乏 贫困 浪漫化 结构性贫困 设计资源 劳动者 建筑师 美术馆 意识形态 殖民遗产 干旱 工业发展 生产方式 社会关系 历史暴力 丰盛 废弃材料 共同体 真实性 创造力 历史断裂 土地 种族 劳动 政治压迫 Ana María León 去殖民化 现代主义 原住民 民间文化 韧性 公共资源 社区 公共设施 工艺 工业 城市更新 公共空间 女性 生态 再利用 地方性 财政 组织 政治力量 解放",
   },
+  {
+    title: "透明性如何成为控制的技术", date: "2026.06.06", category: "理论", url: "/articles/transparency-as-a-technology-of-control/?v=20260606",
+    summary: "从建筑的透明性出发，讨论可见性如何成为权力与控制的技术。",
+    tags: ["透明性", "建筑", "权力", "控制", "可见性", "建筑理论"],
+    searchableText: "透明性 控制 技术 建筑 可见性 权力 建筑理论 小红书 原文",
+  },
 ];
 
 const searchInput = document.querySelector("[data-search]");
