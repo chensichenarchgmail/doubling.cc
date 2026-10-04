@@ -6,7 +6,7 @@
     <meta name="description" content="小花的建筑笔记：建筑、展览与公共生活的阅读、评论和研究札记。" />
     <meta name="robots" content="noindex, noarchive, nosnippet" />
     <title>小花的建筑笔记</title>
-    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/styles.css?v=20261004-gallery" />
   </head>
   <body>
     <div class="shell">
@@ -14,23 +14,25 @@
         <a class="site-title" href="/" aria-label="小花的建筑笔记首页">小花的建筑笔记</a>
       </header>
 
+      <nav class="site-nav" aria-label="网站导航">
+        <div class="site-nav-pages">
+          <a class="site-nav-link is-active" href="/" aria-current="page">文章</a>
+          <a class="site-nav-link" href="/gallery/">Gallery</a>
+        </div>
+        <div class="site-nav-external">
+          <a class="site-nav-link" href="https://food.doubling.cc/" target="_blank" rel="noopener noreferrer" aria-label="在新窗口打开 food">food ↗</a>
+          <a class="site-nav-link xhs-link" href="https://xhslink.cn/m/5hU8gL6OSXb" target="_blank" rel="noopener noreferrer" aria-label="在新窗口打开小红书">XHS ↗</a>
+        </div>
+      </nav>
+
       <main>
-        <section class="controls" aria-label="文章搜索与筛选">
+        <section class="controls" aria-label="文章搜索">
           <div class="search-wrap">
             <label class="search-label" for="article-search" aria-hidden="true">⌕</label>
-            <input class="search-input" id="article-search" type="search" placeholder="搜索标题、标签或文章内容" autocomplete="off" data-search />
+            <input class="search-input" id="article-search" type="search" aria-label="搜索文章" placeholder="搜索标题、标签或文章内容" autocomplete="off" data-search />
             <button class="search-clear" type="button" data-search-clear>清除</button>
           </div>
 
-          <div class="filter-row">
-            <div class="filters" aria-label="文章分类">
-              <button class="filter-button is-active" type="button" data-filter="全部" aria-pressed="true">全部</button>
-              <button class="filter-button" type="button" data-filter="评论" aria-pressed="false">评论</button>
-              <button class="filter-button" type="button" data-filter="建筑师" aria-pressed="false">建筑师</button>
-              <button class="filter-button" type="button" data-filter="理论" aria-pressed="false">理论</button>
-            </div>
-            <a class="xhs-link" href="https://xhslink.cn/m/5hU8gL6OSXb" target="_blank" rel="noopener noreferrer" aria-label="在新窗口打开小红书">XHS ↗</a>
-          </div>
         </section>
 
         <p class="result-count" aria-live="polite" data-result-count></p>
@@ -97,7 +99,7 @@
       <footer class="site-footer"><span>© 2026 小花的建筑笔记</span></footer>
     </div>
 
-    <script src="/assets/site.js?v=20260526a" defer></script>
-    <script src="/assets/protect.js" defer></script>
+    <script src="/assets/site.js?v=20261004-gallery" defer></script>
+    <script src="/assets/protect.js?v=20261004-gallery" defer></script>
   </body>
 </html>

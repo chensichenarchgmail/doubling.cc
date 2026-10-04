@@ -3,5 +3,6 @@ document.addEventListener("copy", (event) => event.preventDefault());
 document.addEventListener("cut", (event) => event.preventDefault());
 document.addEventListener("dragstart", (event) => event.preventDefault());
 document.addEventListener("selectstart", (event) => {
-  if (!event.target.closest("input, textarea")) event.preventDefault();
+  const target = event.target instanceof Element ? event.target : event.target.parentElement;
+  if (!target?.closest("input, textarea")) event.preventDefault();
 });

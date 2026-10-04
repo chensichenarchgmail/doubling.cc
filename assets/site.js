@@ -48,21 +48,19 @@ const articles = [
 
 const searchInput = document.querySelector("[data-search]");
 const clearButton = document.querySelector("[data-search-clear]");
-const filterButtons = [...document.querySelectorAll("[data-filter]")];
 const cards = [...document.querySelectorAll("[data-article]")];
 const resultCount = document.querySelector("[data-result-count]");
 const emptyState = document.querySelector("[data-empty]");
-let activeCategory = "全部";
 
 function normalize(value) { return value.toLocaleLowerCase().replace(/\s+/g, " ").trim(); }
 
-function applyFilters() {
+function applySearch() {
   const query = normalize(searchInput?.value || "");
   let visible = 0;
   cards.forEach((card, index) => {
     const article = articles[index];
     const corpus = normalize([article.title, article.summary, article.category, article.tags.join(" "), article.searchableText].join(" "));
-    const shouldShow = (!query || corpus.includes(query)) && (activeCategory === "全部" || article.category === activeCategory);
+    const shouldShow = !query || corpus.includes(query);
     card.hidden = !shouldShow;
     if (shouldShow) visible += 1;
   });
@@ -83,21 +81,13 @@ async function hydrateSearchIndex() {
       if (body) article.searchableText += ` ${body.textContent}`;
     } catch { /* The curated fallback index remains available. */ }
   }));
-  applyFilters();
+  applySearch();
 }
 
-searchInput?.addEventListener("input", applyFilters);
-clearButton?.addEventListener("click", () => { searchInput.value = ""; searchInput.focus(); applyFilters(); });
-filterButtons.forEach((button) => button.addEventListener("click", () => {
-  activeCategory = button.dataset.filter;
-  filterButtons.forEach((candidate) => {
-    candidate.classList.toggle("is-active", candidate === button);
-    candidate.setAttribute("aria-pressed", String(candidate === button));
-  });
-  applyFilters();
-}));
+searchInput?.addEventListener("input", applySearch);
+clearButton?.addEventListener("click", () => { searchInput.value = ""; searchInput.focus(); applySearch(); });
 document.addEventListener("keydown", (event) => {
   if (event.key === "/" && document.activeElement !== searchInput) { event.preventDefault(); searchInput?.focus(); }
 });
-applyFilters();
+applySearch();
 hydrateSearchIndex();
