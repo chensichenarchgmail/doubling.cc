@@ -32,6 +32,18 @@ const articles = [
     tags: ["透明性", "建筑", "权力", "控制", "可见性", "建筑理论"],
     searchableText: "透明性 控制 技术 建筑 可见性 权力 建筑理论 小红书 原文",
   },
+  {
+    title: "死亡的三个位置-Lewerentz建筑新解", date: "2026.05.26", category: "理论", url: "/articles/three-positions-of-death-lewerentz/?v=20260526",
+    summary: "从死亡的三个位置出发，重新理解 Lewerentz 建筑中的空间、仪式与身体。",
+    tags: ["Sigurd Lewerentz", "死亡", "空间", "仪式", "建筑解读", "建筑理论"],
+    searchableText: "死亡 三个位置 Lewerentz Sigurd Lewerentz 空间 仪式 身体 建筑解读 建筑理论 小红书 原文",
+  },
+  {
+    title: "建筑史如何通过缝合术掩盖裂缝", date: "2026.05.01", category: "理论", url: "/articles/how-architectural-history-sutures-cracks/?v=20260501",
+    summary: "讨论建筑史如何通过叙事的缝合，遮蔽自身内部的断裂与裂缝。",
+    tags: ["建筑史", "缝合术", "裂缝", "历史叙事", "建筑理论", "批评"],
+    searchableText: "建筑史 缝合术 掩盖 裂缝 断裂 历史叙事 建筑理论 批评 小红书 原文",
+  },
 ];
 
 const searchInput = document.querySelector("[data-search]");
